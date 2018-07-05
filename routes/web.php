@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'WelcomeController@index')->name('welcome.index');
+
+Route::get('event/create', 'EventsController@create')->name('event.create');
+Route::post('event/generate', 'EventsController@generateEvents')->name('event.generate');
+Route::post('event/schedule', 'EventsController@scheduleEvents')->name('event.schedule');
