@@ -9,7 +9,7 @@ use App\Event;
 class WelcomeController extends Controller
 {
     function index(){
-        $events = Event::all();
+        $events = Event::all()->sortBy('dateFrom')->sortBy('timeFrom');
 
         return view('welcome', [
             'events' => $events,

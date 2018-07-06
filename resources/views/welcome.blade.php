@@ -6,7 +6,7 @@
         <h3>Events Coming Up</h3>
         <ul>
             @foreach ($events as $item)
-                <li>{{$item->title}}</li>
+                <li><b>[{{$item->id}}]{{$item->title}}</b> | [{{$item->dateFrom}} ~ {{$item->dateTo}}] | [{{$item->timeFrom}} ~ {{$item->timeTo}}]</li>
             @endforeach
         </ul>
     </div>
