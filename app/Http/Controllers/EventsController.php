@@ -11,6 +11,19 @@ use App\Event;
 // 1. get user-determined range of events with UNIX timestamp conversion on it and store them in an array (a1).
 // 2. create an array (a2) that represents all the possible options of the scheduling event.
 // 3. run collision detection with each elements of a1 and a2.
+// pseudo-code
+// foreach(a2){
+//   var collided = false;
+//   foreach(a1){
+//       if a2.item.Collide(a1.item)
+//          collided = true;
+//          break;
+//       endif
+//   }
+//   if !collided
+//      print "a2.item is schedulable!";
+//   endif
+// }
 
 class EventsController extends Controller
 {
