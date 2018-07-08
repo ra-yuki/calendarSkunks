@@ -9,7 +9,7 @@ use App\Event;
 //*-- go for it strategy from midnight me;) --*//
 ///////////////////////////////////////////////////////////
 // 1. get user-determined range of events with UNIX timestamp conversion on it and store them in an array (a1).
-// 2. create an array (a2) that represents all the possible options of the scheduling event.
+// 2. create an array (a2) that represents all the possible options of the scheduling event (UNIX timestamped).
 // 3. run collision detection with each elements of a1 and a2.
 // pseudo-code
 // foreach(a2){
